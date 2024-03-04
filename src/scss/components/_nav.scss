@@ -1,0 +1,73 @@
+@import '../base/base';
+
+.header {
+    display: flex;
+
+    &--logo {
+        margin: 10px;
+        padding: 4;
+        display: flex;
+
+        &_image {
+            width: 20%;
+        }
+
+        &-text {
+            font-size: 48px;
+            padding: 0px 8px;
+            font-weight: 800;
+            color: var(--accent-color1);
+            letter-spacing: 3px;
+        }
+    }
+
+    &--navmenu {
+        display: flex;
+        width: 40%;
+
+        &-nav {
+            display: flex;
+            list-style-type: none;
+            color: var(--accent-color1);
+            justify-content: space-between;
+            gap: 10%;
+
+            &-text {
+                text-decoration: none;
+                color: var(--accent-color1);
+                padding: 8px 0px;
+            }
+
+            &-text:hover {
+                color: var(--hovercolor);
+                text-decoration: underline;
+                transition: 0.6s;
+            }
+            .active{
+                color: var(--hovercolor);
+            }
+        }
+
+        &-authnav {
+            display: flex;
+            justify-content: space-around;
+
+            &-text {
+                text-decoration: none;
+                color: var(--accent-color1);
+                padding: 0px 8px;
+            }
+
+            &-text:hover {
+                color: var(--hovercolor);
+                text-decoration: underline;
+            }
+
+            &-line {
+                height: 30px;
+                margin: 2px;
+            }
+        }
+
+    }
+}

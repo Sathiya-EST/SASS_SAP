@@ -1,0 +1,29 @@
+@import '../base/base';
+
+.footer {
+    color: var(--accent-color1);
+    background-color: #00000017;
+    display: block;
+    text-align: center;
+    height: 5rem;
+    padding: 1rem;
+
+    &--navmenu-nav {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        margin: auto;
+        justify-content: space-between;
+        list-style-type: none;
+        font-size: 12px;
+    }
+
+    &--nav-text {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &--nav-text:hover {
+        color: #00aaa2;
+        text-decoration: underline;
+    }
+}

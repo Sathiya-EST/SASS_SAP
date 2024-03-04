@@ -1,26 +1,32 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 const Nav = () => {
+    const [navState, setNavState] = useState(false)
     return (
-        <div>
-            <section>
-                <div className='logo'>
-                    <img src='https://cdn.mos.cms.futurecdn.net/RY2EpSo74hvYXyAVpTN2Gg-1200-80.jpg' alt='logo_image' />
+        <nav>
+            <header className='header'>
+                <div className='header--logo'>
+                    <img src='src\assets\favicon.svg' alt='logo_image' className='header--logo_image' />
+                    <div className="header--logo-text">Fish Paradise</div>
                 </div>
-                <div>
-                    <li>Home</li>
-                    <li>About </li>
-                    <li>Explore</li>
-                    <li>News</li>
-                    <li>Contact</li>
+                <div className='toggle-container'>
+                    <div className="toggle"></div>
+                    <div className="mode"></div>
                 </div>
-                <div>
-                    <a href='/'>Login</a>
-                    <a href='/'>Register</a>
+                <div className='header--navmenu'>
+                    <ul className='header--navmenu-nav'>
+                        <li><a href='' className='header--navmenu-nav-text active'> Home</a></li>
+                        <li><a href='' className='header--navmenu-nav-text'> About</a></li>
+                        <li><a href='' className='header--navmenu-nav-text'> Explore</a></li>
+                        <li><a href='' className='header--navmenu-nav-text'> Contact</a></li>
+                    </ul>
                 </div>
-            </section>
-
-        </div>
+                <div className='header--navmenu-authnav'>
+                    <a href='/' className='header--navmenu-authnav-text'>Login</a>
+                    <hr className='header--navmenu-authnav-line'></hr>
+                    <a href='/' className='header--navmenu-authnav-text'>Register</a>
+                </div>
+            </header>
+        </nav>
     )
 }
 

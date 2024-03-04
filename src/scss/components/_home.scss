@@ -1,0 +1,40 @@
+@use '../base/base';
+@use '../utils/animation';
+
+.homecontainer {
+    width: 40%;
+    margin: 4% auto 4% 10%;
+
+    &--text-main {
+        color: var(--accent-color1);
+        font-weight: 600;
+        font-size: 40px;
+        margin-left: 20%;
+    }
+
+    &--text {
+        color: var(--accent-color1);
+        font-weight: 400;
+        font-size: 40px;
+        margin-left: 20%;
+    }
+
+    &--content {
+        color: var(--accent-color1);
+    }
+
+    &--line {
+        margin: 8%;
+        border: none;
+        height: 2px;
+        background-color: var(--line);
+        margin: 20px 0;
+        width: 400px;
+        margin-left: -3rem;
+    }
+}
+
+.color-change {
+    animation: color-change 10s infinite;
+    transition: 500ms;
+}

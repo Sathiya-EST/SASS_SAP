@@ -1,0 +1,17 @@
+$primary: #3498db;
+
+@mixin btn($bg-color: $primary) {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+    background-color: $bg-color;
+
+    &:hover {
+        background-color: darken($color: $bg-color, $amount: 10%);
+    }
+}

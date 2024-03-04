@@ -4,9 +4,10 @@ import Footer from '../Components/Footer'
 import Contact from '../Components/Contact'
 import Home from '../Components/Home'
 import About from '../Components/About'
+import '../scss/index.scss'
 const Main = () => {
     return (
-        <div>
+        <div className='container'>
             <Nav />
             <Home />
             <About />
