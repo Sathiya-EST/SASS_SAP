@@ -2,8 +2,9 @@
 
 .btn {
     @include mixins.btn;
-transition: 500ms;
-font-weight: 600;
+    transition: 500ms;
+    font-weight: 600;
+
     &-primary {
         // background-color: rgb(5, 170, 148);
         @include mixins.btn(rgb(5, 170, 148));
